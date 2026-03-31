@@ -1,5 +1,7 @@
+import AllPosts from '../../components/posts/all-posts';
+import { posts } from '../index';
 const AllPage = () => {
-  return <div></div>;
+  return <AllPosts posts={posts} />;
 };
 
 export default AllPage;
