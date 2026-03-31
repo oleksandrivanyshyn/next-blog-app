@@ -1,7 +1,16 @@
 import AllPosts from '../../components/posts/all-posts';
-import { posts } from '../index';
-const AllPage = () => {
-  return <AllPosts posts={posts} />;
+import { getAllPosts } from '../../lib/posts-util';
+
+const AllPage = (props) => {
+  return <AllPosts posts={props.posts} />;
 };
+export function getStaticProps() {
+  const allPosts = getAllPosts();
+  return {
+    props: {
+      posts: allPosts,
+    },
+  };
+}
 
 export default AllPage;
