@@ -5,14 +5,14 @@ const Hero = () => {
     <section className={classes.hero}>
       <div className={classes.image}>
         <Image
-          src="/images/site/max.png"
-          alt="An image showing Max"
+          src="/images/site/sasha.jpg"
+          alt="An image showing Sasha"
           width={300}
           height={300}
         />
       </div>
-      <h1>Hi, I`m Max</h1>
-      <p>I blog about web development</p>
+      <h1>Hi, I`m Sasha</h1>
+      <p>This is my blog about web development</p>
     </section>
   );
 };
